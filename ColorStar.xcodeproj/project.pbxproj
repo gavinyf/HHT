@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		057091C552190C688B64C035 /* libPods-ColorStar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE133F32521DF07B9FC9705C /* libPods-ColorStar.a */; };
+		861F6D1924E16A7400E75023 /* CSMineConfigCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 861F6D1824E16A7400E75023 /* CSMineConfigCell.m */; };
+		861F6D1C24E16A9100E75023 /* CSMineTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 861F6D1B24E16A9100E75023 /* CSMineTopView.m */; };
+		861F6D2024E16B8E00E75023 /* CSMineConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 861F6D1F24E16B8E00E75023 /* CSMineConfigModel.m */; };
 		8637C88724D94EDF00AEFA65 /* CSHomeSquareCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8637C88624D94EDF00AEFA65 /* CSHomeSquareCell.m */; };
 		8637C88A24D98B1E00AEFA65 /* CSHomeBigCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8637C88924D98B1E00AEFA65 /* CSHomeBigCell.m */; };
 		8637C88D24DA4D3A00AEFA65 /* CSHomeTopicHeaderReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8637C88C24DA4D3A00AEFA65 /* CSHomeTopicHeaderReusableView.m */; };
@@ -17,6 +20,7 @@
 		8669512124DD7C2200B0C6F7 /* CSCourseChirdrenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8669512024DD7C2200B0C6F7 /* CSCourseChirdrenViewController.m */; };
 		8669512424DD856700B0C6F7 /* CSCourseSecondLevelCategoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8669512324DD856700B0C6F7 /* CSCourseSecondLevelCategoryModel.m */; };
 		8669512824DE83B300B0C6F7 /* CSCourseTopicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8669512724DE83B300B0C6F7 /* CSCourseTopicModel.m */; };
+		8669512B24E1675700B0C6F7 /* cs_mine_setting.json in Resources */ = {isa = PBXBuildFile; fileRef = 8669512A24E1675700B0C6F7 /* cs_mine_setting.json */; };
 		866BB53A24E026EE00AED452 /* CSRouterManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 866BB53924E026EE00AED452 /* CSRouterManger.m */; };
 		866BB53E24E0371C00AED452 /* CSUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 866BB53D24E0371C00AED452 /* CSUserModel.m */; };
 		866BB54224E0387700AED452 /* CSSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 866BB54124E0387700AED452 /* CSSettingViewController.m */; };
@@ -78,6 +82,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		861F6D1724E16A7400E75023 /* CSMineConfigCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSMineConfigCell.h; sourceTree = "<group>"; };
+		861F6D1824E16A7400E75023 /* CSMineConfigCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSMineConfigCell.m; sourceTree = "<group>"; };
+		861F6D1A24E16A9100E75023 /* CSMineTopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSMineTopView.h; sourceTree = "<group>"; };
+		861F6D1B24E16A9100E75023 /* CSMineTopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSMineTopView.m; sourceTree = "<group>"; };
+		861F6D1E24E16B8E00E75023 /* CSMineConfigModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSMineConfigModel.h; sourceTree = "<group>"; };
+		861F6D1F24E16B8E00E75023 /* CSMineConfigModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSMineConfigModel.m; sourceTree = "<group>"; };
 		8637C88524D94EDF00AEFA65 /* CSHomeSquareCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSHomeSquareCell.h; sourceTree = "<group>"; };
 		8637C88624D94EDF00AEFA65 /* CSHomeSquareCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSHomeSquareCell.m; sourceTree = "<group>"; };
 		8637C88824D98B1E00AEFA65 /* CSHomeBigCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSHomeBigCell.h; sourceTree = "<group>"; };
@@ -97,6 +107,7 @@
 		8669512524DE6DE500B0C6F7 /* CSColorStar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSColorStar.h; sourceTree = "<group>"; };
 		8669512624DE83B300B0C6F7 /* CSCourseTopicModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSCourseTopicModel.h; sourceTree = "<group>"; };
 		8669512724DE83B300B0C6F7 /* CSCourseTopicModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSCourseTopicModel.m; sourceTree = "<group>"; };
+		8669512A24E1675700B0C6F7 /* cs_mine_setting.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cs_mine_setting.json; sourceTree = "<group>"; };
 		866BB53824E026EE00AED452 /* CSRouterManger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSRouterManger.h; sourceTree = "<group>"; };
 		866BB53924E026EE00AED452 /* CSRouterManger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSRouterManger.m; sourceTree = "<group>"; };
 		866BB53C24E0371C00AED452 /* CSUserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSUserModel.h; sourceTree = "<group>"; };
@@ -247,6 +258,26 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		861F6D1624E16A3700E75023 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				861F6D1724E16A7400E75023 /* CSMineConfigCell.h */,
+				861F6D1824E16A7400E75023 /* CSMineConfigCell.m */,
+				861F6D1A24E16A9100E75023 /* CSMineTopView.h */,
+				861F6D1B24E16A9100E75023 /* CSMineTopView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		861F6D1D24E16B6400E75023 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				861F6D1E24E16B8E00E75023 /* CSMineConfigModel.h */,
+				861F6D1F24E16B8E00E75023 /* CSMineConfigModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		8669510A24DC2C9700B0C6F7 /* WebView */ = {
 			isa = PBXGroup;
 			children = (
@@ -269,6 +300,14 @@
 				8669512724DE83B300B0C6F7 /* CSCourseTopicModel.m */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		8669512924E1672200B0C6F7 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				8669512A24E1675700B0C6F7 /* cs_mine_setting.json */,
+			);
+			path = JSON;
 			sourceTree = "<group>";
 		};
 		866BB53724E026D700AED452 /* Router */ = {
@@ -493,6 +532,9 @@
 		86A9746424D7ACA000368A09 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				86A9747924D7B05000368A09 /* CSMineViewController.h */,
+				86A9747A24D7B05000368A09 /* CSMineViewController.m */,
+				861F6D1D24E16B6400E75023 /* Models */,
 				866BB56C24E03B0E00AED452 /* Service */,
 				866BB56824E03AE100AED452 /* About */,
 				866BB56424E03AC300AED452 /* MyRecharge */,
@@ -504,8 +546,7 @@
 				866BB54B24E038EF00AED452 /* MyFavorite */,
 				866BB54724E038C300AED452 /* MyRecord */,
 				866BB54324E0389700AED452 /* MyCourse */,
-				86A9747924D7B05000368A09 /* CSMineViewController.h */,
-				86A9747A24D7B05000368A09 /* CSMineViewController.m */,
+				861F6D1624E16A3700E75023 /* Views */,
 				866BB53F24E0385A00AED452 /* Setting */,
 			);
 			path = Mine;
@@ -523,6 +564,7 @@
 		86A9746624D7AD9000368A09 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				8669512924E1672200B0C6F7 /* JSON */,
 				86A9748D24D7B57000368A09 /* Localization */,
 				86A9745524D79D7400368A09 /* Assets.xcassets */,
 				86A9745724D79D7400368A09 /* LaunchScreen.storyboard */,
@@ -762,6 +804,7 @@
 				86A9745924D79D7400368A09 /* LaunchScreen.storyboard in Resources */,
 				86A9749224D7B5C000368A09 /* Localizable.strings in Resources */,
 				86A9745624D79D7400368A09 /* Assets.xcassets in Resources */,
+				8669512B24E1675700B0C6F7 /* cs_mine_setting.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -822,9 +865,11 @@
 				86A974C524D8F24B00368A09 /* CSHomeCategoryCell.m in Sources */,
 				866BB56B24E03AF400AED452 /* CSAboutViewController.m in Sources */,
 				86A974AF24D82E4500368A09 /* CSHomeSmallCell.m in Sources */,
+				861F6D1C24E16A9100E75023 /* CSMineTopView.m in Sources */,
 				8637C88A24D98B1E00AEFA65 /* CSHomeBigCell.m in Sources */,
 				866BB56F24E03B2500AED452 /* CSServiceViewController.m in Sources */,
 				86A9748124D7B12400368A09 /* CSBaseNavigationController.m in Sources */,
+				861F6D2024E16B8E00E75023 /* CSMineConfigModel.m in Sources */,
 				86A9748924D7B28900368A09 /* CSNetworkManager.m in Sources */,
 				86A974E124D8FB3200368A09 /* SDCycleScrollView.m in Sources */,
 				86A974BC24D83D9C00368A09 /* CSHomeTopicBaseModel.m in Sources */,
@@ -833,6 +878,7 @@
 				867982EE24DBD288000E932E /* CSLoginViewController.m in Sources */,
 				867982E224DACE3F000E932E /* CSBaseTabBarController.m in Sources */,
 				86A9747524D7AE7C00368A09 /* UIColor+CS.m in Sources */,
+				861F6D1924E16A7400E75023 /* CSMineConfigCell.m in Sources */,
 				8637C88724D94EDF00AEFA65 /* CSHomeSquareCell.m in Sources */,
 				86A974A024D825D400368A09 /* CSBaseModel.m in Sources */,
 				86A9749A24D7DF2900368A09 /* CSSearchViewController.m in Sources */,
