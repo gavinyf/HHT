@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CSMineTopViewModel.h"
 
-NS_ASSUME_NONNULL_BEGIN
 
 @interface CSMineTopView : UIView
 
+- (instancetype)initWithTopViewModel:(CSMineTopViewModel*)model;
+
 @end
 
-NS_ASSUME_NONNULL_END
+

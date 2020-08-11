@@ -19,6 +19,7 @@
 #import "CSHomeSmallCell.h"
 #import "CSHomeSquareCell.h"
 #import "CSHomeBigCell.h"
+#import "CSHomeCheckCell.h"
 #import "CSHomeTopicHeaderReusableView.h"
 
 #import "CSNetworkManager.h"
@@ -36,6 +37,7 @@ NSString * const CSHomePressCellReuseIdentifier = @"CSHomePressCellReuseIdentifi
 NSString * const CSHomeSmallCellReuseIdentifier = @"CSHomeSmallCellReuseIdentifier";
 NSString * const CSHomeSquareCellReuseIdentifier = @"CSHomeSquareCellReuseIdentifier";
 NSString * const CSHomeBigCellReuseIdentifier = @"CSHomeBigCellReuseIdentifier";
+NSString * const CSHomeCheckCellReuseIdentifier = @"CSHomeCheckCellReuseIdentifier";
 NSString * const CSHomeTopicHeaderReusableViewReuseIdentifier = @"CSHomeTopicHeaderReusableViewReuseIdentifier";
 
 @interface CSHomeViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
@@ -138,6 +140,7 @@ NSString * const CSHomeTopicHeaderReusableViewReuseIdentifier = @"CSHomeTopicHea
     [self.collectionView registerClass:[CSHomeSmallCell class] forCellWithReuseIdentifier:CSHomeSmallCellReuseIdentifier];
     [self.collectionView registerClass:[CSHomeSquareCell class] forCellWithReuseIdentifier:CSHomeSquareCellReuseIdentifier];
     [self.collectionView registerClass:[CSHomeBigCell class] forCellWithReuseIdentifier:CSHomeBigCellReuseIdentifier];
+    [self.collectionView registerClass:[CSHomeCheckCell class] forCellWithReuseIdentifier:CSHomeCheckCellReuseIdentifier];
     
     [self.collectionView registerClass:[CSHomeTopicHeaderReusableView class] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:CSHomeTopicHeaderReusableViewReuseIdentifier];
     
@@ -156,7 +159,13 @@ NSString * const CSHomeTopicHeaderReusableViewReuseIdentifier = @"CSHomeTopicHea
     }else if (section == 2){
         return self.categories.count;
     }else{
-        return self.topicList[section - 4].list.count;
+        CSHomeTopicSectionModel * model = self.topicList[section - 4];
+        if (model.sectionType == CSHomeTopicSectionTypeCheck) {
+            return 1;
+        }else{
+            return model.list.count;
+        }
+        
     }
 }
 
@@ -182,18 +191,22 @@ NSString * const CSHomeTopicHeaderReusableViewReuseIdentifier = @"CSHomeTopicHea
     }else{
         CSHomeTopicSectionModel * model = self.topicList[indexPath.section - 4];
         CSHomeTopicBaseModel * topicModel = model.list[indexPath.row];
-        if (model.sectionType == CSHomeTopicSectionTypeBig) {
+        if (model.sectionType == CSHomeTopicSectionTypeBig) {//大图
             CSHomeBigCell * bigCell = (CSHomeBigCell*)[collectionView dequeueReusableCellWithReuseIdentifier:CSHomeBigCellReuseIdentifier forIndexPath:indexPath];
             [bigCell configurModel:topicModel];
             return bigCell;
-        }else if (model.sectionType == CSHomeTopicSectionTypeSmall){
+        }else if (model.sectionType == CSHomeTopicSectionTypeSmall){//小图
             CSHomeSmallCell * smallCell = (CSHomeSmallCell*)[collectionView dequeueReusableCellWithReuseIdentifier:CSHomeSmallCellReuseIdentifier forIndexPath:indexPath];
             [smallCell configurModel:topicModel];
             return smallCell;
-        }else if (model.sectionType == CSHomeTopicSectionTypeSquare){
+        }else if (model.sectionType == CSHomeTopicSectionTypeSquare){//宫图
             CSHomeSquareCell * squareCell = (CSHomeSquareCell*)[collectionView dequeueReusableCellWithReuseIdentifier:CSHomeSquareCellReuseIdentifier forIndexPath:indexPath];
             [squareCell configurModel:topicModel];
             return squareCell;
+        }else if (model.sectionType == CSHomeTopicSectionTypeCheck){//左右切换
+            CSHomeCheckCell  * checkCell = (CSHomeCheckCell*)[collectionView dequeueReusableCellWithReuseIdentifier:CSHomeCheckCellReuseIdentifier forIndexPath:indexPath];
+            [checkCell configModel:model];
+            return checkCell;
         }
         return nil;
     }
@@ -204,13 +217,14 @@ NSString * const CSHomeTopicHeaderReusableViewReuseIdentifier = @"CSHomeTopicHea
 - (UICollectionReusableView*)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.section > 3 && [kind isEqualToString:UICollectionElementKindSectionHeader]) {
         CSHomeTopicSectionModel * model = self.topicList[indexPath.section - 4];
-        if (model.sectionType == CSHomeTopicSectionTypeSquare || model.sectionType == CSHomeTopicSectionTypeSmall) {
-            
+    
+        if (model.showHead) {
             CSHomeTopicHeaderReusableView * reuseView = (CSHomeTopicHeaderReusableView*)[collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:CSHomeTopicHeaderReusableViewReuseIdentifier forIndexPath:indexPath];
             reuseView.sectionModel = model;
             return reuseView;
+        }else{
+            return nil;
         }
-        return nil;
     }
     return nil;
 }
@@ -243,6 +257,10 @@ NSString * const CSHomeTopicHeaderReusableViewReuseIdentifier = @"CSHomeTopicHea
             CGFloat width = self.view.width/2 - 14 - 8;
             CGFloat height = width*(124.0/165.0);
             return CGSizeMake(width, height + 65);
+        }else if (model.sectionType == CSHomeTopicSectionTypeCheck){
+            CGFloat width = self.view.width/2 - 14 - 8;
+            CGFloat height = width*(124.0/165.0);
+            return CGSizeMake(self.view.width, height + 65);
         }
         return CGSizeZero;
     }
@@ -253,8 +271,10 @@ NSString * const CSHomeTopicHeaderReusableViewReuseIdentifier = @"CSHomeTopicHea
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section{
     if (section > 3) {
          CSHomeTopicSectionModel * model = self.topicList[section - 4];
-        if (model.sectionType == CSHomeTopicSectionTypeSquare || model.sectionType == CSHomeTopicSectionTypeSmall) {
+        if (model.showHead) {
             return CGSizeMake(self.view.width, 55);
+        }else{
+            return CGSizeZero;
         }
     }
     return CGSizeZero;

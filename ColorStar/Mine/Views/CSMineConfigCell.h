@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CSMineConfigModel.h"
 
 @interface CSMineConfigCell : UITableViewCell
+
+- (void)configModel:(CSMineConfigModel*)model;
 
 @end
 

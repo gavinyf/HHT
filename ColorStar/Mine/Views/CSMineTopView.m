@@ -8,14 +8,26 @@
 
 #import "CSMineTopView.h"
 
+@interface CSMineTopView ()
+
+@property (nonatomic, strong)CSMineTopViewModel * model;
+
+@end
+
 @implementation CSMineTopView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (instancetype)initWithTopViewModel:(CSMineTopViewModel*)model{
+    if (self = [super init]) {
+        _model = model;
+        [self setupViews];
+    }
+    return self;
 }
-*/
 
+
+- (void)setupViews{
+    
+    
+    
+}
 @end

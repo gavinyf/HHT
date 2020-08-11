@@ -17,6 +17,8 @@
 
 - (void)selecteCartegoryId:(NSString*)categoryId;
 
+- (void)pushToVC:(UIViewController*)VC;
+
 
 - (UIViewController*)currentVC;
 @end

@@ -42,6 +42,8 @@ typedef NS_ENUM(NSUInteger, CSHomeTopicSectionType) {
 
 @property (nonatomic, assign)CSHomeTopicSectionType   sectionType;
 
+@property (nonatomic, assign)BOOL         showHead;
+
 @end
 
 

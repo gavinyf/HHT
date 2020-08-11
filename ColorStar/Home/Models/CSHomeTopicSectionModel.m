@@ -34,4 +34,8 @@
     return CSHomeTopicSectionTypeNone;
 }
 
+- (BOOL)showHead{
+    return YES;
+}
+
 @end

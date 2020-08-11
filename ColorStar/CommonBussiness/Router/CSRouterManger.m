@@ -38,6 +38,10 @@ CSRouterManger * manger = nil;
     
 }
 
+- (void)pushToVC:(UIViewController*)VC{
+    [self.currentVC.navigationController pushViewController:VC animated:YES];
+}
+
 - (UIViewController*)currentVC{
     UIViewController *result = nil;
     UIWindow * window = [[UIApplication sharedApplication] keyWindow];

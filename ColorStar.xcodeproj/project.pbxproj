@@ -11,6 +11,13 @@
 		861F6D1924E16A7400E75023 /* CSMineConfigCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 861F6D1824E16A7400E75023 /* CSMineConfigCell.m */; };
 		861F6D1C24E16A9100E75023 /* CSMineTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 861F6D1B24E16A9100E75023 /* CSMineTopView.m */; };
 		861F6D2024E16B8E00E75023 /* CSMineConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 861F6D1F24E16B8E00E75023 /* CSMineConfigModel.m */; };
+		861F6D2324E287FF00E75023 /* CSMineTopViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 861F6D2224E287FF00E75023 /* CSMineTopViewModel.m */; };
+		861F6D2724E292C100E75023 /* CSMyPinkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 861F6D2624E292C100E75023 /* CSMyPinkViewController.m */; };
+		861F6D2A24E2935700E75023 /* CSMineTopItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 861F6D2924E2935700E75023 /* CSMineTopItemView.m */; };
+		861F6D2D24E2B0FB00E75023 /* CSHomeCheckCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 861F6D2C24E2B0FB00E75023 /* CSHomeCheckCell.m */; };
+		861F6D3024E2BCA900E75023 /* CSHomeActorIconCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 861F6D2F24E2BCA900E75023 /* CSHomeActorIconCell.m */; };
+		861F6D3324E2C21300E75023 /* CSEmptyRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = 861F6D3224E2C21300E75023 /* CSEmptyRefreshView.m */; };
+		861F6D3624E2C99E00E75023 /* CSHomeActorIconModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 861F6D3524E2C99E00E75023 /* CSHomeActorIconModel.m */; };
 		8637C88724D94EDF00AEFA65 /* CSHomeSquareCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8637C88624D94EDF00AEFA65 /* CSHomeSquareCell.m */; };
 		8637C88A24D98B1E00AEFA65 /* CSHomeBigCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8637C88924D98B1E00AEFA65 /* CSHomeBigCell.m */; };
 		8637C88D24DA4D3A00AEFA65 /* CSHomeTopicHeaderReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8637C88C24DA4D3A00AEFA65 /* CSHomeTopicHeaderReusableView.m */; };
@@ -88,6 +95,20 @@
 		861F6D1B24E16A9100E75023 /* CSMineTopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSMineTopView.m; sourceTree = "<group>"; };
 		861F6D1E24E16B8E00E75023 /* CSMineConfigModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSMineConfigModel.h; sourceTree = "<group>"; };
 		861F6D1F24E16B8E00E75023 /* CSMineConfigModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSMineConfigModel.m; sourceTree = "<group>"; };
+		861F6D2124E287FF00E75023 /* CSMineTopViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSMineTopViewModel.h; sourceTree = "<group>"; };
+		861F6D2224E287FF00E75023 /* CSMineTopViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSMineTopViewModel.m; sourceTree = "<group>"; };
+		861F6D2524E292C100E75023 /* CSMyPinkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSMyPinkViewController.h; sourceTree = "<group>"; };
+		861F6D2624E292C100E75023 /* CSMyPinkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSMyPinkViewController.m; sourceTree = "<group>"; };
+		861F6D2824E2935700E75023 /* CSMineTopItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSMineTopItemView.h; sourceTree = "<group>"; };
+		861F6D2924E2935700E75023 /* CSMineTopItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSMineTopItemView.m; sourceTree = "<group>"; };
+		861F6D2B24E2B0FB00E75023 /* CSHomeCheckCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSHomeCheckCell.h; sourceTree = "<group>"; };
+		861F6D2C24E2B0FB00E75023 /* CSHomeCheckCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSHomeCheckCell.m; sourceTree = "<group>"; };
+		861F6D2E24E2BCA900E75023 /* CSHomeActorIconCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSHomeActorIconCell.h; sourceTree = "<group>"; };
+		861F6D2F24E2BCA900E75023 /* CSHomeActorIconCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSHomeActorIconCell.m; sourceTree = "<group>"; };
+		861F6D3124E2C21300E75023 /* CSEmptyRefreshView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSEmptyRefreshView.h; sourceTree = "<group>"; };
+		861F6D3224E2C21300E75023 /* CSEmptyRefreshView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSEmptyRefreshView.m; sourceTree = "<group>"; };
+		861F6D3424E2C99E00E75023 /* CSHomeActorIconModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSHomeActorIconModel.h; sourceTree = "<group>"; };
+		861F6D3524E2C99E00E75023 /* CSHomeActorIconModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSHomeActorIconModel.m; sourceTree = "<group>"; };
 		8637C88524D94EDF00AEFA65 /* CSHomeSquareCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSHomeSquareCell.h; sourceTree = "<group>"; };
 		8637C88624D94EDF00AEFA65 /* CSHomeSquareCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSHomeSquareCell.m; sourceTree = "<group>"; };
 		8637C88824D98B1E00AEFA65 /* CSHomeBigCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSHomeBigCell.h; sourceTree = "<group>"; };
@@ -265,6 +286,8 @@
 				861F6D1824E16A7400E75023 /* CSMineConfigCell.m */,
 				861F6D1A24E16A9100E75023 /* CSMineTopView.h */,
 				861F6D1B24E16A9100E75023 /* CSMineTopView.m */,
+				861F6D2824E2935700E75023 /* CSMineTopItemView.h */,
+				861F6D2924E2935700E75023 /* CSMineTopItemView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -274,8 +297,19 @@
 			children = (
 				861F6D1E24E16B8E00E75023 /* CSMineConfigModel.h */,
 				861F6D1F24E16B8E00E75023 /* CSMineConfigModel.m */,
+				861F6D2124E287FF00E75023 /* CSMineTopViewModel.h */,
+				861F6D2224E287FF00E75023 /* CSMineTopViewModel.m */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		861F6D2424E292A700E75023 /* MyPink */ = {
+			isa = PBXGroup;
+			children = (
+				861F6D2524E292C100E75023 /* CSMyPinkViewController.h */,
+				861F6D2624E292C100E75023 /* CSMyPinkViewController.m */,
+			);
+			path = MyPink;
 			sourceTree = "<group>";
 		};
 		8669510A24DC2C9700B0C6F7 /* WebView */ = {
@@ -534,6 +568,7 @@
 			children = (
 				86A9747924D7B05000368A09 /* CSMineViewController.h */,
 				86A9747A24D7B05000368A09 /* CSMineViewController.m */,
+				861F6D2424E292A700E75023 /* MyPink */,
 				861F6D1D24E16B6400E75023 /* Models */,
 				866BB56C24E03B0E00AED452 /* Service */,
 				866BB56824E03AE100AED452 /* About */,
@@ -657,6 +692,8 @@
 				86A974BB24D83D9C00368A09 /* CSHomeTopicBaseModel.m */,
 				86A974AA24D82A8A00368A09 /* CSHomeRecentInfoModel.h */,
 				86A974AB24D82A8A00368A09 /* CSHomeRecentInfoModel.m */,
+				861F6D3424E2C99E00E75023 /* CSHomeActorIconModel.h */,
+				861F6D3524E2C99E00E75023 /* CSHomeActorIconModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -676,6 +713,8 @@
 				86A974BE24D8F20A00368A09 /* CSHomeSearchBarCell.m */,
 				86A974C024D8F22D00368A09 /* CSHomeCycleCell.h */,
 				86A974C124D8F22D00368A09 /* CSHomeCycleCell.m */,
+				861F6D2E24E2BCA900E75023 /* CSHomeActorIconCell.h */,
+				861F6D2F24E2BCA900E75023 /* CSHomeActorIconCell.m */,
 				86A974C324D8F24B00368A09 /* CSHomeCategoryCell.h */,
 				86A974C424D8F24B00368A09 /* CSHomeCategoryCell.m */,
 				86A974C624D8F4A500368A09 /* CSHomePressCell.h */,
@@ -688,6 +727,8 @@
 				8637C88624D94EDF00AEFA65 /* CSHomeSquareCell.m */,
 				8637C88824D98B1E00AEFA65 /* CSHomeBigCell.h */,
 				8637C88924D98B1E00AEFA65 /* CSHomeBigCell.m */,
+				861F6D2B24E2B0FB00E75023 /* CSHomeCheckCell.h */,
+				861F6D2C24E2B0FB00E75023 /* CSHomeCheckCell.m */,
 				8637C88B24DA4D3A00AEFA65 /* CSHomeTopicHeaderReusableView.h */,
 				8637C88C24DA4D3A00AEFA65 /* CSHomeTopicHeaderReusableView.m */,
 			);
@@ -701,6 +742,8 @@
 				86A974B224D82F2D00368A09 /* CSTypeLabel.m */,
 				86A974B424D82F5400368A09 /* CSCheckMoreView.h */,
 				86A974B524D82F5400368A09 /* CSCheckMoreView.m */,
+				861F6D3124E2C21300E75023 /* CSEmptyRefreshView.h */,
+				861F6D3224E2C21300E75023 /* CSEmptyRefreshView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -860,12 +903,15 @@
 				86A974B624D82F5400368A09 /* CSCheckMoreView.m in Sources */,
 				86A9746D24D7AE0200368A09 /* CSHomeViewController.m in Sources */,
 				866BB55B24E03A1100AED452 /* CSMySpreadViewController.m in Sources */,
+				861F6D2724E292C100E75023 /* CSMyPinkViewController.m in Sources */,
 				866BB53E24E0371C00AED452 /* CSUserModel.m in Sources */,
 				86A9747224D7AE6000368A09 /* UIView+CS.m in Sources */,
 				86A974C524D8F24B00368A09 /* CSHomeCategoryCell.m in Sources */,
 				866BB56B24E03AF400AED452 /* CSAboutViewController.m in Sources */,
+				861F6D3024E2BCA900E75023 /* CSHomeActorIconCell.m in Sources */,
 				86A974AF24D82E4500368A09 /* CSHomeSmallCell.m in Sources */,
 				861F6D1C24E16A9100E75023 /* CSMineTopView.m in Sources */,
+				861F6D3324E2C21300E75023 /* CSEmptyRefreshView.m in Sources */,
 				8637C88A24D98B1E00AEFA65 /* CSHomeBigCell.m in Sources */,
 				866BB56F24E03B2500AED452 /* CSServiceViewController.m in Sources */,
 				86A9748124D7B12400368A09 /* CSBaseNavigationController.m in Sources */,
@@ -886,6 +932,7 @@
 				8669512824DE83B300B0C6F7 /* CSCourseTopicModel.m in Sources */,
 				867982E624DAE5C0000E932E /* CSCourseTopicTableCell.m in Sources */,
 				867982DF24DA59F0000E932E /* UILabel+CS.m in Sources */,
+				861F6D2D24E2B0FB00E75023 /* CSHomeCheckCell.m in Sources */,
 				86A974E224D8FB3200368A09 /* UIView+SDExtension.m in Sources */,
 				8669512124DD7C2200B0C6F7 /* CSCourseChirdrenViewController.m in Sources */,
 				8669510D24DC2CF700B0C6F7 /* CSWebViewController.m in Sources */,
@@ -893,6 +940,8 @@
 				866BB54624E038BC00AED452 /* CSMyCourseViewController.m in Sources */,
 				86A974E324D8FB3200368A09 /* SDCollectionViewCell.m in Sources */,
 				86A974E724D8FB3200368A09 /* TAAbstractDotView.m in Sources */,
+				861F6D2324E287FF00E75023 /* CSMineTopViewModel.m in Sources */,
+				861F6D3624E2C99E00E75023 /* CSHomeActorIconModel.m in Sources */,
 				866BB53A24E026EE00AED452 /* CSRouterManger.m in Sources */,
 				86A974A924D829EB00368A09 /* CSHomePressModel.m in Sources */,
 				86A974B324D82F2D00368A09 /* CSTypeLabel.m in Sources */,
@@ -904,6 +953,7 @@
 				86A974E524D8FB3200368A09 /* TAPageControl.m in Sources */,
 				8637C88D24DA4D3A00AEFA65 /* CSHomeTopicHeaderReusableView.m in Sources */,
 				86A974A624D8299000368A09 /* CSHomeCategoryModel.m in Sources */,
+				861F6D2A24E2935700E75023 /* CSMineTopItemView.m in Sources */,
 				86A9747B24D7B05000368A09 /* CSMineViewController.m in Sources */,
 				8669511724DD273100B0C6F7 /* CSCourseTopCategoryModel.m in Sources */,
 				86A974E624D8FB3200368A09 /* TAAnimatedDotView.m in Sources */,

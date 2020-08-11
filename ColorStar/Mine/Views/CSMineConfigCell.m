@@ -7,8 +7,11 @@
 //
 
 #import "CSMineConfigCell.h"
+#import <Masonry.h>
 
 @interface CSMineConfigCell ()
+
+@property (nonatomic, strong)CSMineConfigModel * configModel;
 
 @property (nonatomic, strong)UIImageView  * iconImageView;
 
@@ -33,6 +36,28 @@
     [self.contentView addSubview:self.titleLabel];
     [self.contentView addSubview:self.arrowImageView];
     
+    [self.iconImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.size.mas_equalTo(CGSizeMake(20, 20));
+        make.left.mas_equalTo(self.contentView).offset(18);
+        make.centerY.mas_equalTo(self.contentView);
+    }];
+    
+    [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.mas_equalTo(self.iconImageView);
+        make.left.mas_equalTo(self.iconImageView.mas_right).offset(10);
+    }];
+    
+    [self.arrowImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.mas_equalTo(self.titleLabel);
+        make.right.mas_equalTo(self.contentView).offset(-18);
+    }];
+    
+}
+
+- (void)configModel:(CSMineConfigModel*)model{
+    self.configModel = model;
+    self.iconImageView.image = [UIImage imageNamed:model.image];
+    self.titleLabel.text = model.name;
 }
 
 
@@ -48,6 +73,8 @@
 - (UILabel*)titleLabel{
     if (!_titleLabel) {
         _titleLabel = [[UILabel alloc]initWithFrame:CGRectZero];
+        _titleLabel.textColor = [UIColor colorWithWhite:1.0 alpha:0.6];
+        _titleLabel.font = [UIFont systemFontOfSize:15.0f];
     }
     return _titleLabel;
 }
@@ -55,6 +82,7 @@
 - (UIImageView*)arrowImageView{
     if (!_arrowImageView) {
         _arrowImageView = [[UIImageView alloc]initWithFrame:CGRectZero];
+        _arrowImageView.image = [UIImage imageNamed:@"cs_home_checkmore"];
     }
     return _arrowImageView;
 }
